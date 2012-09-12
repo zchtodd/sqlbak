@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
     set_tar_path(tarname);
     set_tmp_path(tmpname);
 
-    walk_dir(path, "*.db3", cb);
+    walk_dir(path, cb);
 
     logmsg("creating temp file '%s'\n", tmpname);
     logmsg("creating tar file '%s'\n", tarname);
