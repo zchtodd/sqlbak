@@ -22,6 +22,7 @@ Use sqlbak to check the health of all SQLite3 databases under a given directory.
 
 <pre>
 sqlbak . --integrity-check
+sqlbak: file is encrypted or is not a database (/home/zach/Desktop/sqlbak/tests/malformed.db3)
 /home/zach/Desktop/sqlbak/tests/locked.db3: ok
 /home/zach/Desktop/sqlbak/tests/simple.db3: ok
 </pre>
