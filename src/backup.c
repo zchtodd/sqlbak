@@ -124,7 +124,7 @@ int backup(const char* path)
                 break;
             
             case SQLITE_BUSY:
-                fprintf(stderr, "sqlbak: %s (blocked by %d) (%s)\n", 
+                fprintf(stderr, "sqlbak: %s (lock held by pid %d) (%s)\n", 
                                 "cannot obtain lock", get_blocking_pid(path), path);
                 break;
         }
